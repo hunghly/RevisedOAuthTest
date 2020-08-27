@@ -143,4 +143,5 @@ OAUTH2_PROVIDER = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 # On successful login, redirect to this location
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
