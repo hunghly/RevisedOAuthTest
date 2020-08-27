@@ -6,8 +6,8 @@ from django.contrib.auth.models import Group, User
 from server.serializers import GroupSerializer, UserSerializer
 
 # Create your views here.
-def test(request):
-    return HttpResponse('This is a test view')
+def index(request):
+    return render(request, 'registration/index.html')
 
 class UserList(generics.ListCreateAPIView):
     permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
