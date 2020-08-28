@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import NavigationBar from './components/NavBar.js'
 import Client from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <NavigationBar/>
     <Client/>
   </React.StrictMode>,
   document.getElementById('root')
