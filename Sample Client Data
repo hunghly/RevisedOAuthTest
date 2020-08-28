@@ -1,0 +1,28 @@
+client id: 
+IUXH0GodyaB9gcam6iUEXcoV608cOAWIooeKkoIo
+
+
+client secret: 
+SVTVzbNiFYu8r4oXXAIAOsXszID1JnJJw1Ud8ypOgtm2ItSNuvqP1Zyr2hHJnZgciD3DBnvJrtMi4Mm1IQQy01N6v6uBwGFCEPJOgUaxpWFVJHPUJlkTYQmVXX5bAXkn
+
+
+(random string) code-verifier: 5d2309e5bb73b864f989753887fe52f79ce5270395e25862da6940d5
+(base64 encoding) code-challenge: MChCW5vD+3h03HMGFZYskOSTir7II/MMTb8a9rJNhnI
+
+code: IzPjOhaQ1abjrqVJehaWIFVHNUSxRy
+{
+    "access_token": "ES4DbzavP6Jr7bNyRMtczxpyKKKGEs",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write groups",
+    "refresh_token": "EkhiwApCxvAQFDUtXTwTp1LyC3DWNL"
+}
+
+# View users
+curl -H "Authorization: Bearer ES4DbzavP6Jr7bNyRMtczxpyKKKGEs" http://localhost:8000/users/
+
+# View groups
+curl -H "Authorization: Bearer ES4DbzavP6Jr7bNyRMtczxpyKKKGEs" http://localhost:8000/groups/
+
+
+# Insert a new user
