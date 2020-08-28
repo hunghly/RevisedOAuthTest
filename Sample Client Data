@@ -26,3 +26,10 @@ curl -H "Authorization: Bearer ES4DbzavP6Jr7bNyRMtczxpyKKKGEs" http://localhost:
 
 
 # Insert a new user
+curl -H "Authorization: Bearer ES4DbzavP6Jr7bNyRMtczxpyKKKGEs" -X POST -d"username=foo&password=bar" http://localhost:8000/users/
+
+# Refreshing your token after expiration
+curl -X POST -d "grant_type=refresh_token&refresh_token=<your_refresh_token>&client_id=<your_client_id>&client_secret=<your_client_secret>" http://localhost:8000/o/token/
+
+
+curl -X POST -d "grant_type=password&username=admin&password=djangopass1&scope=read" -u"IUXH0GodyaB9gcam6iUEXcoV608cOAWIooeKkoIo:SVTVzbNiFYu8r4oXXAIAOsXszID1JnJJw1Ud8ypOgtm2ItSNuvqP1Zyr2hHJnZgciD3DBnvJrtMi4Mm1IQQy01N6v6uBwGFCEPJOgUaxpWFVJHPUJlkTYQmVXX5bAXkn" http://localhost:8000/o/token/
