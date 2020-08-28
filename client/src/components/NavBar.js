@@ -42,7 +42,7 @@ const NavigationBar = () => {
         <li className='nav-item'><a href="">Teams</a></li>
         <li className='nav-item'><a href="">Weekly</a></li>
         <li className='nav-item'><a href="">Login</a></li>
-        <li className='nav-item'><a href="">Register</a></li>
+        <li className='nav-item'><a href="/register">Register</a></li>
         <li className='nav-item'><a href="">Settings</a></li>
         <li className='nav-item'><a href="">Individual</a></li>
       </ul>

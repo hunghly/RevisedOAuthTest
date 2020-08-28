@@ -13,10 +13,13 @@ function Client() {
 
   console.log(config.headers);
 
-  fetch("http://127.0.0.1:8000/users/", config).then((res) => {
+  fetch("http://127.0.0.1:8000/users/1", config).then((res) => {
     console.log("found response");
     console.log(res);
-    console.log(res.json());
+    // console.log(res.json());
+    return res.json();
+  }).then((users) => {
+    console.log(users);
   });
 
   return (
